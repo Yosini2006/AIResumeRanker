@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TalentLens — Beat the ATS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.visible{visibility:visible}.static{position:static}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.top-0{top:0}.-z-10{z-index:-10}.z-40{z-index:40}.col-span-2{grid-column:span 2/span 2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-10{margin-bottom:2.5rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-3\.5{margin-bottom:.875rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-24{margin-top:6rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-64{width:16rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-lg{max-width:32rem}.max-w-sm{max-width:24rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-border>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(40 50 74/var(--tw-divide-opacity,1))}.overflow-hidden,.truncate{overflow:hidden}.truncate{text-overflow:ellipsis;white-space:nowrap}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-border{--tw-border-opacity:1;border-color:rgb(40 50 74/var(--tw-border-opacity,1))}.border-border\/70{border-color:rgba(40,50,74,.7)}.border-brand\/30{border-color:rgba(47,111,237,.3)}.bg-brand\/10{background-color:rgba(47,111,237,.1)}.bg-brand\/20{background-color:rgba(47,111,237,.2)}.bg-ink{--tw-bg-opacity:1;background-color:rgb(14 20 32/var(--tw-bg-opacity,1))}.bg-ink\/80{background-color:rgba(14,20,32,.8)}.bg-surface{--tw-bg-opacity:1;background-color:rgb(20 27 42/var(--tw-bg-opacity,1))}.\!p-2{padding:.5rem!important}.p-4{padding:1rem}.p-8{padding:2rem}.\!px-4{padding-left:1rem!important;padding-right:1rem!important}.\!py-2\.5{padding-top:.625rem!important;padding-bottom:.625rem!important}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-20{padding-bottom:5rem}.pb-24{padding-bottom:6rem}.pt-24{padding-top:6rem}.text-center{text-align:center}.font-display{font-family:Sora,sans-serif}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.text-brand-light{--tw-text-opacity:1;color:rgb(91 141 239/var(--tw-text-opacity,1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-1000{transition-duration:1s}.last\:border-0:last-child{border-width:0}.hover\:text-accent-rose:hover{--tw-text-opacity:1;color:rgb(242 84 91/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.md\:text-left{text-align:left}.md\:text-6xl{font-size:3.75rem;line-height:1}}
+</style>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0E1420; color:#f1f5f9; font-family:'Inter',sans-serif; }
+  h1,h2,h3,h4 { font-family:'Sora',sans-serif; }
+  ::selection { background: rgba(47,111,237,.35); }
+  .container-xl { max-width: 80rem; margin:0 auto; padding:0 1.5rem; }
+  .btn-primary {
+    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+    border-radius:.75rem; background:#2F6FED; color:#fff; font-weight:600;
+    padding:.75rem 1.25rem; transition:background .15s; box-shadow:0 8px 30px -12px rgba(15,23,42,.55);
+    border:none; cursor:pointer; font-size:.9rem;
+  }
+  .btn-primary:hover:not(:disabled) { background:#1F4FBE; }
+  .btn-primary:disabled { opacity:.5; cursor:not-allowed; }
+  .btn-secondary {
+    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+    border-radius:.75rem; border:1px solid #28324A; color:#e2e8f0; font-weight:500;
+    padding:.75rem 1.25rem; transition:all .15s; background:transparent; cursor:pointer; font-size:.9rem;
+  }
+  .btn-secondary:hover:not(:disabled) { border-color:#2F6FED; color:#5B8DEF; }
+  .btn-secondary:disabled { opacity:.5; cursor:not-allowed; }
+  .card { background:#141B2A; border:1px solid #28324A; border-radius:1.25rem; padding:1.5rem; box-shadow:0 8px 30px -12px rgba(15,23,42,.55); }
+  .input-field {
+    width:100%; border-radius:.5rem; background:#1C2540; border:1px solid #28324A;
+    padding:.75rem 1rem; font-size:.875rem; color:#f1f5f9; outline:none; transition:all .15s;
+  }
+  .input-field::placeholder { color:#64748b; }
+  .input-field:focus { border-color:#2F6FED; box-shadow:0 0 0 3px rgba(47,111,237,.2); }
+  .input-field:disabled { opacity:.6; }
+  .label { display:block; font-size:.875rem; font-weight:500; color:#cbd5e1; margin-bottom:.375rem; }
+  .badge { display:inline-block; padding:.3rem .65rem; border-radius:9999px; font-size:.72rem; font-weight:600; }
+  .tone-match { background:rgba(31,182,166,.15); color:#1FB6A6; }
+  .tone-gap { background:rgba(245,166,35,.15); color:#F5A623; }
+  .tone-danger { background:rgba(242,84,91,.15); color:#F2545B; }
+  .tone-accent { background:rgba(47,111,237,.15); color:#5B8DEF; }
+  .nav-link { color:#94a3b8; font-size:.9rem; transition:color .15s; }
+  .nav-link:hover { color:#fff; }
+  .sidebar-link { display:flex; align-items:center; gap:.75rem; padding:.65rem .75rem; border-radius:.5rem; font-size:.9rem; font-weight:500; color:#94a3b8; transition:all .15s; cursor:pointer; }
+  .sidebar-link:hover { color:#fff; background:#1C2540; }
+  .sidebar-link.active { background:rgba(47,111,237,.15); color:#5B8DEF; }
+  .tab-btn { display:flex; align-items:center; gap:.4rem; padding:.6rem .9rem; font-size:.875rem; border-bottom:2px solid transparent; color:#94a3b8; cursor:pointer; background:none; border-left:none; border-right:none; border-top:none; transition:all .15s; }
+  .tab-btn:hover { color:#fff; }
+  .tab-btn.active { border-bottom-color:#2F6FED; color:#fff; }
+  .fade-in { animation: fadeIn .35s ease; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(6px);} to {opacity:1; transform:translateY(0);} }
+  .view { display:none; }
+  .view.visible { display:block; }
+  table.tl-table { width:100%; font-size:.875rem; border-collapse:collapse; }
+  table.tl-table thead tr { text-align:left; color:#64748b; border-bottom:1px solid #28324A; text-transform:uppercase; font-size:.72rem; }
+  table.tl-table th { padding-bottom:.5rem; font-weight:500; }
+  table.tl-table td { padding:.65rem 0; border-bottom:1px solid #28324A; }
+  table.tl-table tr:last-child td { border-bottom:none; }
+  ::-webkit-scrollbar { width:8px; height:8px; }
+  ::-webkit-scrollbar-thumb { background:#28324A; border-radius:4px; }
+  details[open] > summary .chevron-icon { transform: rotate(180deg); }
+  .chevron-icon { transition: transform .2s ease; display:inline-block; }
+  summary { list-style:none; }
+  summary::-webkit-details-marker { display:none; }
+  #sidebar-toggle { display:none; }
+  @media (max-width: 768px) {
+    #app-sidebar {
+      position:fixed; z-index:50; top:0; left:0; height:100vh;
+      transform:translateX(-100%); transition:transform .2s ease;
+    }
+    #app-sidebar.open { transform:translateX(0); }
+    #app-main { width:100%; max-width:100%; padding:1.25rem !important; }
+    #sidebar-toggle { display:flex; }
+    #sidebar-backdrop { display:none; position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:40; }
+    #sidebar-backdrop.open { display:block; }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ LANDING VIEW ============ -->
+<div id="view-landing" class="view visible">
+  <header class="sticky top-0 z-40 border-b border-border/70 bg-ink/80 backdrop-blur-md">
+    <nav class="container-xl flex items-center justify-between h-16">
+      <a href="#" class="flex items-center gap-2 font-display font-bold text-lg text-white">
+        <span class="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5B8DEF" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </span>
+        TalentLens
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#demo" class="nav-link">Demo</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <button onclick="showAuth('login')" class="nav-link font-medium">Log in</button>
+        <button onclick="showAuth('register')" class="btn-primary !py-2.5 !px-4">Get started</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10" style="background:radial-gradient(ellipse at top, rgba(47,111,237,0.18), transparent 60%)"></div>
+    <div class="container-xl pt-24 pb-20 text-center">
+      <div class="inline-flex items-center gap-2 text-xs font-medium text-brand-light bg-brand/10 border border-brand/30 rounded-full px-4 py-1.5 mb-6" style="color:#5B8DEF;border-color:rgba(47,111,237,.3);background:rgba(47,111,237,.1)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg>
+        Trusted by candidates at 400+ companies
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-[1.1] text-white">
+        Get past the bots. <span style="color:#5B8DEF">Land the interview.</span>
+      </h1>
+      <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+        TalentLens scores your resume against any job description the way an applicant tracking system does — then tells you exactly what to fix.
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-4">
+        <button onclick="showAuth('register')" class="btn-primary text-base">
+          Analyze my resume
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <a href="#demo" class="btn-secondary text-base">See how it works</a>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">No credit card required · runs entirely in your browser</p>
+    </div>
+  </section>
+
+  <section id="demo" class="container-xl pb-24">
+    <div class="card grid md:grid-cols-3 gap-8">
+      <div class="text-center md:text-left">
+        <div class="text-5xl font-display font-extrabold" style="color:#1FB6A6">94%</div>
+        <div class="text-slate-400 mt-1">ATS Score</div>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="text-5xl font-display font-extrabold" style="color:#5B8DEF">91%</div>
+        <div class="text-slate-400 mt-1">Job Match Score</div>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="text-5xl font-display font-extrabold" style="color:#F5A623">7</div>
+        <div class="text-slate-400 mt-1">Missing keywords flagged</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="container-xl pb-24">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-3xl font-bold text-white">Everything you need to beat the ATS</h2>
+      <p class="text-slate-400 mt-3">One scan gives you a full picture of how a recruiter's software will see you.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6" id="features-grid"></div>
+  </section>
+
+  <section id="pricing" class="container-xl pb-24">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-3xl font-bold text-white">Simple, transparent pricing</h2>
+      <p class="text-slate-400 mt-3">Start free. Upgrade when you're actively applying.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6" id="pricing-grid"></div>
+  </section>
+
+  <section class="container-xl pb-24">
+    <div class="grid md:grid-cols-3 gap-6" id="testimonials-grid"></div>
+  </section>
+
+  <section id="faq" class="container-xl pb-24">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-3xl font-bold text-white">Frequently asked questions</h2>
+    </div>
+    <div class="max-w-2xl mx-auto divide-y divide-border" id="faq-list"></div>
+  </section>
+
+  <section id="contact" class="container-xl pb-24">
+    <div class="card text-center" style="background:linear-gradient(135deg, rgba(47,111,237,.15), transparent)">
+      <h2 class="text-3xl font-bold mb-3 text-white">Ready to see your score?</h2>
+      <p class="text-slate-400 mb-8 max-w-lg mx-auto">Create a free account and run your first ATS scan in under two minutes.</p>
+      <button onclick="showAuth('register')" class="btn-primary text-base mx-auto">
+        Get started free
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <footer class="border-t border-border mt-24">
+    <div class="container-xl py-12 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm">
+      <div class="col-span-2">
+        <div class="font-display font-bold text-lg mb-2 text-white">TalentLens</div>
+        <p class="text-slate-400 max-w-xs">AI-assisted resume scoring and job-match analysis for candidates and hiring teams.</p>
+      </div>
+      <div>
+        <div class="text-slate-200 font-medium mb-3">Product</div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#features" class="hover:text-white">Features</a></li>
+          <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+          <li><button onclick="showAuth('login')" class="hover:text-white">Dashboard</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-slate-200 font-medium mb-3">Company</div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#" class="hover:text-white">About</a></li>
+          <li><a href="#" class="hover:text-white">Careers</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-slate-200 font-medium mb-3">Legal</div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#" class="hover:text-white">Privacy</a></li>
+          <li><a href="#" class="hover:text-white">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-xl py-6 border-t border-border text-xs text-slate-500">© 2026 TalentLens. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- ============ AUTH VIEW ============ -->
+<div id="view-auth" class="view">
+  <div class="min-h-screen flex items-center justify-center px-6">
+    <div class="w-full max-w-sm">
+      <div class="flex justify-center mb-8">
+        <a href="#" onclick="goLanding();return false;" class="flex items-center gap-2 font-display font-bold text-lg text-white">
+          <span class="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5B8DEF" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </span>
+          TalentLens
+        </a>
+      </div>
+      <div class="card">
+        <h1 id="auth-title" class="text-xl font-bold mb-1 text-white">Welcome back</h1>
+        <p id="auth-sub" class="text-sm text-slate-400 mb-6">Log in to see your resume reports.</p>
+        <div id="auth-name-wrap" class="mb-4 hidden">
+          <label class="label">Name</label>
+          <input id="auth-name" class="input-field" placeholder="Ada Lovelace" />
+        </div>
+        <div class="mb-2">
+          <label class="label">Email</label>
+          <input id="auth-email" class="input-field" placeholder="you@example.com" onkeydown="if(event.key==='Enter')doAuth()"/>
+        </div>
+        <p class="text-xs text-slate-500 mb-5 mt-3">This demo runs fully client-side — no server, no password needed. Your "account" and reports are stored only in this browser.</p>
+        <button onclick="doAuth()" class="btn-primary w-full">Continue</button>
+        <p class="text-sm text-slate-400 mt-5 text-center">
+          <span id="auth-toggle-text">Don't have an account?</span>
+          <button onclick="toggleAuthMode()" class="text-brand-light font-medium" style="color:#5B8DEF">
+            <span id="auth-toggle-action">Sign up</span>
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ APP (DASHBOARD) VIEW ============ -->
+<div id="view-app" class="view">
+  <div id="sidebar-backdrop" onclick="closeSidebar()"></div>
+  <div class="flex min-h-screen bg-ink">
+    <aside id="app-sidebar" class="w-64 shrink-0 border-r border-border bg-surface min-h-screen flex flex-col">
+      <div class="h-16 flex items-center gap-2 px-6 border-b border-border font-display font-bold text-white">
+        <span class="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5B8DEF" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </span>
+        TalentLens
+      </div>
+      <nav class="flex-1 px-3 py-4 space-y-1" id="sidebar-nav"></nav>
+      <div class="p-4 border-t border-border">
+        <div class="flex items-center gap-3 px-2 mb-3">
+          <div class="w-9 h-9 rounded-full bg-brand/20 flex items-center justify-center text-sm font-semibold" style="color:#5B8DEF" id="sidebar-avatar">?</div>
+          <div class="min-w-0">
+            <div class="text-sm font-medium truncate text-white" id="sidebar-name">Account</div>
+            <div class="text-xs text-slate-500 truncate" id="sidebar-email"></div>
+          </div>
+        </div>
+        <button onclick="signOut()" class="flex items-center gap-2 w-full px-3 py-2 rounded-lg text-sm text-slate-400 hover:text-accent-rose transition" style="--hover-color:#F2545B" onmouseover="this.style.color='#F2545B'" onmouseout="this.style.color=''">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          Sign out
+        </button>
+      </div>
+    </aside>
+    <div class="flex-1 min-w-0 flex flex-col">
+      <div id="sidebar-toggle" class="items-center gap-3 h-14 px-4 border-b border-border bg-surface md:hidden">
+        <button onclick="openSidebar()" class="btn-secondary !p-2" style="padding:.5rem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+        <span class="font-display font-bold text-white text-sm">TalentLens</span>
+      </div>
+      <main class="flex-1 p-8 max-w-6xl" id="app-main"></main>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ==================== STATE / STORAGE ==================== */
+const LS_USER = "tl_user";
+const LS_REPORTS = "tl_reports";
+
+function getUser() { try { return JSON.parse(localStorage.getItem(LS_USER)); } catch { return null; } }
+function setUser(u) { localStorage.setItem(LS_USER, JSON.stringify(u)); }
+function getReports() { try { return JSON.parse(localStorage.getItem(LS_REPORTS)) || []; } catch { return []; } }
+function saveReport(r) { const all = getReports(); all.unshift(r); localStorage.setItem(LS_REPORTS, JSON.stringify(all)); }
+
+let authMode = "login";
+let currentPage = "overview";
+let lastAnalysis = null; // { result, jobTitle, companyName, resumeFileName }
+
+/* ==================== VIEW ROUTING ==================== */
+function show(id) {
+  document.querySelectorAll(".view").forEach(v => v.classList.remove("visible"));
+  document.getElementById(id).classList.add("visible");
+  window.scrollTo(0,0);
+}
+function goLanding() { show("view-landing"); }
+function showAuth(mode) {
+  authMode = mode;
+  applyAuthMode();
+  show("view-auth");
+}
+function toggleAuthMode() { authMode = authMode === "login" ? "register" : "login"; applyAuthMode(); }
+function applyAuthMode() {
+  const isLogin = authMode === "login";
+  document.getElementById("auth-title").textContent = isLogin ? "Welcome back" : "Create your account";
+  document.getElementById("auth-sub").textContent = isLogin ? "Log in to see your resume reports." : "Start scanning resumes in under a minute.";
+  document.getElementById("auth-name-wrap").classList.toggle("hidden", isLogin);
+  document.getElementById("auth-toggle-text").textContent = isLogin ? "Don't have an account?" : "Already have an account?";
+  document.getElementById("auth-toggle-action").textContent = isLogin ? "Sign up" : "Log in";
+}
+function doAuth() {
+  const email = document.getElementById("auth-email").value.trim();
+  const name = document.getElementById("auth-name").value.trim();
+  if (!email) { alert("Please enter an email address."); return; }
+  const existing = getUser();
+  const user = {
+    email,
+    name: authMode === "register" ? (name || email.split("@")[0]) : (existing && existing.email === email ? existing.name : email.split("@")[0]),
+  };
+  setUser(user);
+  enterApp("overview");
+}
+function signOut() {
+  localStorage.removeItem(LS_USER);
+  goLanding();
+}
+function enterApp(page) {
+  const user = getUser();
+  if (!user) { showAuth("login"); return; }
+  document.getElementById("sidebar-name").textContent = user.name || "Account";
+  document.getElementById("sidebar-email").textContent = user.email || "";
+  document.getElementById("sidebar-avatar").textContent = (user.name || user.email || "?").charAt(0).toUpperCase();
+  renderSidebar(page);
+  navigate(page);
+  show("view-app");
+}
+function requireAuthOr(fn) {
+  return function() { if (!getUser()) { showAuth("login"); return; } fn(); };
+}
+
+const NAV_ITEMS = [
+  { id: "overview", label: "Overview", icon: `<path d="M3 13h8V3H3v10zM13 21h8V11h-8v10zM13 3v6h8V3h-8zM3 21h8v-6H3v6z"/>` },
+  { id: "analyze", label: "Analyze Resume", icon: `<path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>` },
+  { id: "history", label: "History", icon: `<path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/>` },
+  { id: "settings", label: "Settings", icon: `<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>` },
+];
+
+function renderSidebar(active) {
+  const el = document.getElementById("sidebar-nav");
+  el.innerHTML = NAV_ITEMS.map(item => `
+    <div class="sidebar-link ${item.id === active ? "active" : ""}" onclick="navigate('${item.id}')">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${item.icon}</svg>
+      ${item.label}
+    </div>`).join("");
+}
+
+function navigate(page) {
+  currentPage = page;
+  renderSidebar(page);
+  closeSidebar();
+  const main = document.getElementById("app-main");
+  main.classList.remove("fade-in"); void main.offsetWidth; main.classList.add("fade-in");
+  if (page === "overview") renderOverview();
+  else if (page === "analyze") renderAnalyze();
+  else if (page === "history") renderHistory();
+  else if (page === "settings") renderSettings();
+}
+function openSidebar() {
+  document.getElementById("app-sidebar").classList.add("open");
+  document.getElementById("sidebar-backdrop").classList.add("open");
+}
+function closeSidebar() {
+  document.getElementById("app-sidebar").classList.remove("open");
+  document.getElementById("sidebar-backdrop").classList.remove("open");
+}
+
+/* ==================== ICONS ==================== */
+function ic(paths, size=16) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-3px">${paths}</svg>`;
+}
+const ICONS = {
+  scan: `<path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>`,
+  target: `<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>`,
+  fileCheck: `<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/>`,
+  sparkles: `<path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/>`,
+  bar: `<path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-4"/>`,
+  shield: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>`,
+  trendUp: `<path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/>`,
+  arrowUpRight: `<path d="M7 17 17 7"/><path d="M7 7h10v10"/>`,
+  fileText: `<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/>`,
+  upload: `<path d="M4 14.9A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 .9 8.9"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/>`,
+  braces: `<path d="M8 3a3 3 0 0 0-3 3v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a3 3 0 0 0 3 3"/><path d="M16 3a3 3 0 0 1 3 3v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a3 3 0 0 1-3 3"/>`,
+  scanLine: `<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 12h10"/>`,
+  rotate: `<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v6h6"/>`,
+  warning: `<path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/>`,
+  gauge: `<path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/>`,
+  layers: `<path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/>`,
+  save: `<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/>`,
+  check: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/>`,
+  star: `<path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/>`,
+  chevron: `<path d="m6 9 6 6 6-6"/>`,
+  logout: `<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>`,
+};
+
+/* ==================== ATS SCORING ENGINE (ported) ==================== */
+const TECH_SKILLS = ["javascript","typescript","python","java","c++","c#","go","rust","ruby","php","swift","kotlin","react","next.js","vue","angular","svelte","node.js","express","django","flask","spring boot","graphql","rest api","html","css","tailwind","sass","redux","webpack","vite","aws","azure","gcp","docker","kubernetes","terraform","ansible","ci/cd","jenkins","github actions","postgresql","mysql","mongodb","redis","elasticsearch","dynamodb","sqlite","firebase","supabase","prisma","sql","nosql","microservices","serverless","git","linux","bash","nginx","machine learning","tensorflow","pytorch","pandas","numpy","data analysis","llm","openai","nlp","agile","scrum","jira","figma","testing","jest","cypress","unit testing"];
+const SOFT_SKILLS = ["communication","leadership","teamwork","problem solving","critical thinking","time management","adaptability","collaboration","mentoring","stakeholder management","conflict resolution","creativity","decision making","attention to detail","ownership","negotiation"];
+const CERTIFICATIONS = ["aws certified solutions architect","aws certified developer","azure fundamentals","gcp professional","pmp","scrum master","csm","comptia security+","ckad","cka","google data analytics","itil"];
+const ACTION_VERBS = ["led","built","designed","developed","architected","implemented","launched","optimized","reduced","increased","improved","managed","created","automated","delivered","scaled","migrated","drove","spearheaded"];
+const LEADERSHIP_WORDS = ["led","managed","mentored","directed","supervised","owned","spearheaded","coordinated"];
+const COMMUNICATION_WORDS = ["presented","communicated","documented","collaborated","facilitated","reported"];
+const PROBLEM_SOLVING_WORDS = ["solved","debugged","optimized","resolved","diagnosed","improved","troubleshot"];
+const CREATIVITY_WORDS = ["designed","created","invented","prototyped","innovated","conceived"];
+const PRIORITY_TERMS = ["required","must have","must-have","minimum qualification","essential"];
+
+const norm = s => (s || "").toLowerCase();
+function containsTerm(haystack, term) {
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i");
+  return re.test(haystack);
+}
+function findMatches(text, list) { const t = norm(text); return list.filter(term => containsTerm(t, term)); }
+function countOccurrences(text, words) { const t = norm(text); return words.reduce((sum,w) => sum + (t.split(w).length - 1), 0); }
+function clamp(n, min=0, max=100) { return Math.max(min, Math.min(max, Math.round(n))); }
+function rankLabel(score) {
+  if (score >= 90) return { label: "Excellent", tone: "match" };
+  if (score >= 75) return { label: "Good", tone: "accent" };
+  if (score >= 55) return { label: "Average", tone: "gap" };
+  return { label: "Needs Improvement", tone: "danger" };
+}
+
+function analyzeResume(resumeText, jdText) {
+  const jdTechSkills = findMatches(jdText, TECH_SKILLS);
+  const jdSoftSkills = findMatches(jdText, SOFT_SKILLS);
+  const jdCerts = findMatches(jdText, CERTIFICATIONS);
+  const resumeTechSkills = findMatches(resumeText, TECH_SKILLS);
+  const resumeSoftSkills = findMatches(resumeText, SOFT_SKILLS);
+  const resumeCerts = findMatches(resumeText, CERTIFICATIONS);
+
+  const matchedTech = jdTechSkills.filter(s => resumeTechSkills.includes(s));
+  const missingTech = jdTechSkills.filter(s => !resumeTechSkills.includes(s));
+  const matchedSoft = jdSoftSkills.filter(s => resumeSoftSkills.includes(s));
+  const missingSoft = jdSoftSkills.filter(s => !resumeSoftSkills.includes(s));
+  const matchedCerts = jdCerts.filter(s => resumeCerts.includes(s));
+  const missingCerts = jdCerts.filter(s => !resumeCerts.includes(s));
+  const extraSkills = resumeTechSkills.filter(s => !jdTechSkills.includes(s));
+
+  const techMatchPct = jdTechSkills.length ? clamp((matchedTech.length / jdTechSkills.length) * 100) : 100;
+  const softMatchPct = jdSoftSkills.length ? clamp((matchedSoft.length / jdSoftSkills.length) * 100) : 100;
+  const certMatchPct = jdCerts.length ? clamp((matchedCerts.length / jdCerts.length) * 100) : 100;
+
+  const allJdKeywords = Array.from(new Set([...jdTechSkills, ...jdSoftSkills, ...jdCerts]));
+  const allMatchedKeywords = Array.from(new Set([...matchedTech, ...matchedSoft, ...matchedCerts]));
+  const keywordMatchPct = allJdKeywords.length ? clamp((allMatchedKeywords.length / allJdKeywords.length) * 100) : 100;
+
+  const yearsInResume = (resumeText.match(/(\d+)\+?\s*years?/gi) || []).map(m => parseInt(m,10));
+  const yearsInJD = (jdText.match(/(\d+)\+?\s*years?/gi) || []).map(m => parseInt(m,10));
+  const maxResumeYears = yearsInResume.length ? Math.max(...yearsInResume) : 0;
+  const requiredYears = yearsInJD.length ? Math.max(...yearsInJD) : 0;
+  const experiencePct = requiredYears > 0
+    ? clamp(60 + (maxResumeYears >= requiredYears ? 35 : (maxResumeYears / requiredYears) * 35))
+    : clamp(65 + countOccurrences(resumeText, ["experience","responsible for"]) * 3);
+
+  const eduTerms = ["bachelor","master","phd","b.s.","m.s.","university","college","degree"];
+  const educationPct = clamp(50 + countOccurrences(resumeText, eduTerms) * 12);
+  const projectsPct = clamp(50 + countOccurrences(resumeText, ["project","built a","developed a"]) * 8);
+
+  const wordCount = resumeText.trim().split(/\s+/).filter(Boolean).length;
+  const lengthScore = wordCount < 250 ? 60 : wordCount > 1100 ? 70 : 95;
+  const bulletCount = (resumeText.match(/(^|\n)\s*[•\-*]\s+/g) || []).length;
+  const bulletScore = clamp(50 + bulletCount * 4);
+  const actionVerbHits = countOccurrences(resumeText, ACTION_VERBS);
+  const actionVerbScore = clamp(40 + actionVerbHits * 5);
+  const numberHits = (resumeText.match(/\d+%|\$\d+|\d+x|\d{2,}/g) || []).length;
+  const achievementsScore = clamp(40 + numberHits * 6);
+  const passiveHits = countOccurrences(resumeText, [" was "," were "," been "]);
+  const sentences = resumeText.split(/[.!?]/).filter(s => s.trim().length > 0);
+  const avgSentenceLen = sentences.length ? wordCount / sentences.length : 0;
+  const grammarScore = clamp(95 - Math.max(0, avgSentenceLen - 22) * 2 - passiveHits * 2);
+  const readabilityScore = clamp(90 - Math.max(0, avgSentenceLen - 20) * 1.5);
+  const atsFormattingPct = clamp((lengthScore + bulletScore + actionVerbScore + readabilityScore) / 4);
+
+  const overallATSScore = clamp(lengthScore*.15 + bulletScore*.15 + actionVerbScore*.15 + achievementsScore*.15 + grammarScore*.15 + readabilityScore*.1 + techMatchPct*.15);
+  const jobMatchScore = clamp(techMatchPct*.4 + experiencePct*.2 + educationPct*.1 + certMatchPct*.1 + keywordMatchPct*.2);
+  const resumeRankScore = clamp(techMatchPct*.3 + experiencePct*.25 + projectsPct*.15 + educationPct*.1 + certMatchPct*.05 + atsFormattingPct*.1 + grammarScore*.05);
+
+  const missingSkillsTable = [
+    ...missingTech.map(s => ({ skill: s, category: "Technical", location: "Skills section" })),
+    ...missingCerts.map(s => ({ skill: s, category: "Certification", location: "Certifications section" })),
+    ...missingSoft.map(s => ({ skill: s, category: "Soft Skill", location: "Summary or Experience bullets" })),
+  ].map(row => {
+    const isRequired = PRIORITY_TERMS.some(t => containsTerm(jdText, t)) && containsTerm(jdText, row.skill);
+    return { ...row, priority: isRequired ? "Required" : "Preferred" };
+  }).slice(0, 20);
+
+  const radarData = [
+    { subject: "Technical", value: techMatchPct },
+    { subject: "Soft Skills", value: softMatchPct },
+    { subject: "Leadership", value: clamp(countOccurrences(resumeText, LEADERSHIP_WORDS) * 18) },
+    { subject: "Communication", value: clamp(countOccurrences(resumeText, COMMUNICATION_WORDS) * 20) },
+    { subject: "Problem Solving", value: clamp(countOccurrences(resumeText, PROBLEM_SOLVING_WORDS) * 18) },
+    { subject: "Creativity", value: clamp(countOccurrences(resumeText, CREATIVITY_WORDS) * 20) },
+  ];
+  const keywordPieData = [
+    { name: "Matched", value: allMatchedKeywords.length || 0 },
+    { name: "Missing", value: (allJdKeywords.length - allMatchedKeywords.length) || 0 },
+    { name: "Extra (not in JD)", value: extraSkills.length || 0 },
+  ];
+  const atsBarData = [
+    { name: "Formatting", score: lengthScore },
+    { name: "Bullet Usage", score: bulletScore },
+    { name: "Action Verbs", score: actionVerbScore },
+    { name: "Achievements", score: achievementsScore },
+    { name: "Grammar", score: grammarScore },
+    { name: "Readability", score: readabilityScore },
+  ];
+
+  const suggestions = [];
+  missingTech.slice(0,5).forEach(s => suggestions.push(`Add "${s}" to your Skills section — it appears in the job description but not your resume.`));
+  missingCerts.slice(0,3).forEach(s => suggestions.push(`Consider listing the "${s}" certification if you hold it, or plan to pursue it.`));
+  if (achievementsScore < 70) suggestions.push('Add measurable outcomes to your bullet points, e.g. "reduced load time by 40%".');
+  if (actionVerbScore < 70) suggestions.push("Open more bullet points with strong action verbs like Led, Architected, or Optimized.");
+  if (bulletScore < 70) suggestions.push("Convert dense paragraphs into concise bullet points for easier ATS parsing.");
+  if (passiveHits > 3) suggestions.push('Rewrite passive-voice sentences (e.g. "was responsible for") in active voice.');
+  if (wordCount < 250) suggestions.push("Your resume looks short — add more detail on projects and impact.");
+  if (wordCount > 1100) suggestions.push("Your resume is lengthy — tighten it toward 1-2 pages of high-impact content.");
+  if (!suggestions.length) suggestions.push("Strong alignment — fine-tune wording to mirror the JD's exact phrasing for a few more points.");
+
+  return { overallATSScore, jobMatchScore, resumeRankScore, techMatchPct, softMatchPct, certMatchPct, keywordMatchPct,
+    experiencePct, educationPct, projectsPct, atsFormattingPct, grammarScore, matchedTech, missingTech, matchedSoft,
+    missingSoft, matchedCerts, missingCerts, extraSkills, missingSkillsTable, radarData, keywordPieData, atsBarData,
+    suggestions, wordCount, bulletCount, actionVerbHits, numberHits };
+}
+
+/* ==================== CHART HELPERS (pure SVG) ==================== */
+const COLORS = { match: "#1FB6A6", gap: "#F5A623", danger: "#F2545B", accent: "#5B8DEF", extra: "#8E9AB8" };
+const PIE_COLORS = [COLORS.match, COLORS.gap, COLORS.extra];
+
+function ringSVG(value, label, color) {
+  const v = clamp(value);
+  const size = 130, stroke = 10, r = (size-stroke)/2, c = 2*Math.PI*r, offset = c - (v/100)*c;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" stroke="#1C2540" stroke-width="${stroke}" fill="none"/>
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" stroke="${color}" stroke-width="${stroke}" fill="none"
+      stroke-dasharray="${c}" stroke-dashoffset="${offset}" stroke-linecap="round"
+      transform="rotate(-90 ${size/2} ${size/2})" style="transition:stroke-dashoffset 1s cubic-bezier(.22,1,.36,1)"/>
+    <text x="50%" y="46%" text-anchor="middle" fill="#EAF0FB" font-size="22" font-weight="700">${v}%</text>
+    <text x="50%" y="63%" text-anchor="middle" fill="#8E9AB8" font-size="11">${label}</text>
+  </svg>`;
+}
+function bar100(label, value, color) {
+  const v = clamp(value);
+  return `<div class="mb-3.5">
+    <div class="flex justify-between text-sm mb-1"><span>${label}</span><span class="text-slate-400 font-mono text-xs">${v}%</span></div>
+    <div class="h-2 rounded-full overflow-hidden" style="background:#1C2540">
+      <div class="h-full rounded-full transition-all duration-1000" style="width:${v}%;background:${color}"></div>
+    </div>
+  </div>`;
+}
+function badge(text, tone="gap") {
+  const map = { match:"tone-match", gap:"tone-gap", danger:"tone-danger", accent:"tone-accent" };
+  return `<span class="badge ${map[tone]}">${text}</span>`;
+}
+function radarSVG(data) {
+  const size = 280, cx = size/2, cy = size/2, maxR = 95, n = data.length;
+  const angle = i => (Math.PI*2*i/n) - Math.PI/2;
+  const pt = (i, frac) => [cx + Math.cos(angle(i))*maxR*frac, cy + Math.sin(angle(i))*maxR*frac];
+  let grid = "";
+  [0.25,0.5,0.75,1].forEach(frac => {
+    const pts = data.map((_,i) => pt(i,frac).join(",")).join(" ");
+    grid += `<polygon points="${pts}" fill="none" stroke="#28324A" stroke-width="1"/>`;
+  });
+  data.forEach((_,i) => { const [x,y] = pt(i,1); grid += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#28324A" stroke-width="1"/>`; });
+  const valPts = data.map((d,i) => pt(i, clamp(d.value)/100).join(",")).join(" ");
+  const labels = data.map((d,i) => {
+    const [x,y] = pt(i, 1.18);
+    return `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle" fill="#8E9AB8" font-size="10.5">${d.subject}</text>`;
+  }).join("");
+  return `<svg width="100%" height="260" viewBox="0 0 ${size} ${size}">
+    ${grid}
+    <polygon points="${valPts}" fill="${COLORS.accent}" fill-opacity="0.35" stroke="${COLORS.accent}" stroke-width="2"/>
+    ${labels}
+  </svg>`;
+}
+function pieSVG(data) {
+  const size = 220, cx = size/2, cy = size/2, rOuter = 85, rInner = 55;
+  const total = data.reduce((s,d) => s + d.value, 0) || 1;
+  let angleStart = -Math.PI/2, paths = "";
+  data.forEach((d,i) => {
+    const frac = d.value/total;
+    const angleEnd = angleStart + frac*2*Math.PI;
+    const largeArc = (angleEnd - angleStart) > Math.PI ? 1 : 0;
+    const x1o = cx+rOuter*Math.cos(angleStart), y1o = cy+rOuter*Math.sin(angleStart);
+    const x2o = cx+rOuter*Math.cos(angleEnd), y2o = cy+rOuter*Math.sin(angleEnd);
+    const x1i = cx+rInner*Math.cos(angleEnd), y1i = cy+rInner*Math.sin(angleEnd);
+    const x2i = cx+rInner*Math.cos(angleStart), y2i = cy+rInner*Math.sin(angleStart);
+    if (d.value > 0) {
+      paths += `<path d="M${x1o},${y1o} A${rOuter},${rOuter} 0 ${largeArc} 1 ${x2o},${y2o} L${x1i},${y1i} A${rInner},${rInner} 0 ${largeArc} 0 ${x2i},${y2i} Z" fill="${PIE_COLORS[i%PIE_COLORS.length]}"/>`;
+    }
+    angleStart = angleEnd;
+  });
+  const legend = data.map((d,i) => `<div class="flex items-center gap-2 text-xs text-slate-400"><span style="width:10px;height:10px;border-radius:3px;background:${PIE_COLORS[i%PIE_COLORS.length]};display:inline-block"></span>${d.name} (${d.value})</div>`).join("");
+  return `<div class="flex flex-col items-center gap-4">
+    <svg width="220" height="220" viewBox="0 0 ${size} ${size}">${paths}</svg>
+    <div class="flex flex-wrap gap-3 justify-center">${legend}</div>
+  </div>`;
+}
+
+/* ==================== PAGE: OVERVIEW ==================== */
+function renderOverview() {
+  const user = getUser();
+  const reports = getReports();
+  const avgAts = reports.length ? Math.round(reports.reduce((s,r) => s + r.atsScore, 0) / reports.length) : null;
+  const avgMatch = reports.length ? Math.round(reports.reduce((s,r) => s + r.jobMatchScore, 0) / reports.length) : null;
+  const recent = reports.slice(0,5);
+
+  document.getElementById("app-main").innerHTML = `
+    <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-white">Welcome back${user && user.name ? ", " + user.name.split(" ")[0] : ""}</h1>
+        <p class="text-slate-400 text-sm mt-1">Here's how your resume has been performing.</p>
+      </div>
+      <button onclick="navigate('analyze')" class="btn-primary text-sm">${ic(ICONS.scanLine)} New scan</button>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+      <div class="card"><div class="text-sm text-slate-400 mb-2">Average ATS Score</div><div class="text-3xl font-display font-bold text-white">${avgAts !== null ? avgAts+"%" : "—"}</div></div>
+      <div class="card"><div class="text-sm text-slate-400 mb-2">Average Job Match</div><div class="text-3xl font-display font-bold text-white">${avgMatch !== null ? avgMatch+"%" : "—"}</div></div>
+      <div class="card"><div class="text-sm text-slate-400 mb-2">Total Scans</div><div class="text-3xl font-display font-bold text-white">${reports.length}</div></div>
+    </div>
+    <div class="card">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-semibold flex items-center gap-2 text-white">${ic(ICONS.trendUp,17)} Recent Reports</h2>
+        <button onclick="navigate('history')" class="text-sm font-medium flex items-center gap-1" style="color:#5B8DEF">View all ${ic(ICONS.arrowUpRight,14)}</button>
+      </div>
+      ${recent.length === 0 ? `
+        <div class="text-center py-16 text-slate-500">
+          ${ic(ICONS.fileText, 32)}
+          <p class="text-sm mt-3">No scans yet. Run your first ATS analysis to see reports here.</p>
+          <button onclick="navigate('analyze')" class="btn-primary text-sm mt-4">Analyze a resume</button>
+        </div>` : `
+        <table class="tl-table">
+          <thead><tr><th>Job Title</th><th>ATS Score</th><th>Job Match</th><th>Rank</th><th>Date</th></tr></thead>
+          <tbody>
+            ${recent.map(r => `<tr><td>${r.jobTitle || "Untitled scan"}</td><td>${r.atsScore}%</td><td>${r.jobMatchScore}%</td><td>${r.resumeRank}</td><td class="text-slate-500">${new Date(r.createdAt).toLocaleDateString()}</td></tr>`).join("")}
+          </tbody>
+        </table>`}
+    </div>`;
+}
+
+/* ==================== PAGE: ANALYZE ==================== */
+function renderAnalyze() {
+  document.getElementById("app-main").innerHTML = `
+    <div class="flex items-center justify-between mb-6 flex-wrap gap-3">
+      <div>
+        <h1 class="text-2xl font-bold text-white">Analyze Resume</h1>
+        <p class="text-slate-400 text-sm mt-1">Paste or upload a resume and job description to run a scan.</p>
+      </div>
+      <button id="reset-btn" onclick="resetAnalyze()" class="btn-secondary text-sm hidden">${ic(ICONS.rotate,14)} Reset</button>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <input id="job-title" class="input-field" placeholder="Job title (optional)" oninput="onAnalyzeInputChange()"/>
+      <input id="company-name" class="input-field" placeholder="Company name (optional)" oninput="onAnalyzeInputChange()"/>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2 font-medium text-sm text-white">${ic(ICONS.fileText,16)} Resume</div>
+          <span id="resume-filename" class="text-xs text-slate-500 font-mono"></span>
+        </div>
+        <textarea id="resume-text" class="input-field" style="min-height:220px;resize:vertical" placeholder="Paste your resume text here..." oninput="onAnalyzeInputChange()"></textarea>
+        <button onclick="document.getElementById('resume-file').click()" class="btn-secondary mt-3 text-xs" style="padding:.5rem 1rem">${ic(ICONS.upload,14)} Upload .txt or .docx</button>
+        <input id="resume-file" type="file" accept=".txt,.docx,.pdf" hidden onchange="handleFile(event,'resume')"/>
+      </div>
+      <div class="card">
+        <div class="flex items-center gap-2 font-medium text-sm mb-3 text-white">${ic(ICONS.braces,16)} Job Description</div>
+        <textarea id="jd-text" class="input-field" style="min-height:220px;resize:vertical" placeholder="Paste the job description text here..." oninput="onAnalyzeInputChange()"></textarea>
+        <button onclick="document.getElementById('jd-file').click()" class="btn-secondary mt-3 text-xs" style="padding:.5rem 1rem">${ic(ICONS.upload,14)} Upload .txt or .docx</button>
+        <input id="jd-file" type="file" accept=".txt,.docx,.pdf" hidden onchange="handleFile(event,'jd')"/>
+      </div>
+    </div>
+    <div id="file-error" class="flex items-center gap-2 text-sm mt-4 hidden" style="color:#F5A623"></div>
+    <div class="flex justify-center mt-8 mb-10">
+      <button id="run-scan-btn" disabled onclick="runAnalysis()" class="btn-primary">${ic(ICONS.scanLine,16)} <span id="run-scan-label">Run ATS Scan</span></button>
+    </div>
+    <div id="results-slot"></div>
+  `;
+  onAnalyzeInputChange();
+}
+function onAnalyzeInputChange() {
+  const resumeText = document.getElementById("resume-text").value;
+  const jdText = document.getElementById("jd-text").value;
+  const canAnalyze = resumeText.trim().length > 30 && jdText.trim().length > 30;
+  document.getElementById("run-scan-btn").disabled = !canAnalyze;
+  document.getElementById("reset-btn").classList.toggle("hidden", !(resumeText || jdText || lastAnalysis));
+}
+async function handleFile(evt, target) {
+  const file = evt.target.files[0];
+  const errEl = document.getElementById("file-error");
+  errEl.classList.add("hidden");
+  if (!file) return;
+  const ext = file.name.split(".").pop().toLowerCase();
+  const textArea = document.getElementById(target === "resume" ? "resume-text" : "jd-text");
+  try {
+    if (ext === "txt") {
+      textArea.value = await file.text();
+    } else if (ext === "docx") {
+      const buf = await file.arrayBuffer();
+      const res = await mammoth.extractRawText({ arrayBuffer: buf });
+      textArea.value = res.value;
+    } else if (ext === "pdf") {
+      errEl.textContent = "PDF parsing isn't wired up yet — upload a .docx/.txt file or paste the text.";
+      errEl.classList.remove("hidden");
+      return;
+    } else {
+      errEl.textContent = "Unsupported file type. Use .txt or .docx.";
+      errEl.classList.remove("hidden");
+      return;
+    }
+    if (target === "resume") document.getElementById("resume-filename").textContent = file.name;
+    onAnalyzeInputChange();
+  } catch (e) {
+    errEl.textContent = "Couldn't read that file — try pasting the text instead.";
+    errEl.classList.remove("hidden");
+  }
+}
+function resetAnalyze() {
+  lastAnalysis = null;
+  renderAnalyze();
+}
+function runAnalysis() {
+  const resumeText = document.getElementById("resume-text").value;
+  const jdText = document.getElementById("jd-text").value;
+  const jobTitle = document.getElementById("job-title").value;
+  const companyName = document.getElementById("company-name").value;
+  const resumeFileName = document.getElementById("resume-filename").textContent;
+  const btn = document.getElementById("run-scan-btn");
+  const label = document.getElementById("run-scan-label");
+  btn.disabled = true; label.textContent = "Scanning...";
+  document.getElementById("results-slot").innerHTML = "";
+  setTimeout(() => {
+    const result = analyzeResume(resumeText, jdText);
+    lastAnalysis = { result, jobTitle, companyName, resumeFileName };
+    label.textContent = "Run ATS Scan"; btn.disabled = false;
+    renderResults(result, jobTitle, companyName, resumeFileName);
+    document.getElementById("reset-btn").classList.remove("hidden");
+  }, 900);
+}
+
+let resultsSaved = false;
+let resultsTab = "overview";
+function renderResults(result, jobTitle, companyName, resumeFileName) {
+  resultsSaved = false;
+  resultsTab = "overview";
+  const rank = rankLabel(result.resumeRankScore);
+  const el = document.getElementById("results-slot");
+  el.innerHTML = `
+    <div class="card flex flex-wrap items-center justify-between gap-4 mb-6">
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(245,166,35,.15)">🏆</span>
+        <div>
+          <div class="text-xs text-slate-400">Overall Resume Rank</div>
+          <div class="font-display font-bold text-lg text-white">${rank.label}</div>
+        </div>
+      </div>
+      <button id="save-report-btn" onclick="doSaveReport()" class="btn-secondary text-sm">${ic(ICONS.save,15)} <span id="save-report-label">Save this report</span></button>
+    </div>
+    <div class="flex flex-wrap gap-6 justify-center mb-8">
+      ${ringSVG(result.jobMatchScore, "Job Match", COLORS.match)}
+      ${ringSVG(result.overallATSScore, "ATS Score", COLORS.accent)}
+      ${ringSVG(result.keywordMatchPct, "Keywords", COLORS.gap)}
+    </div>
+    <div class="flex gap-1 border-b border-border mb-6 flex-wrap" id="results-tabs"></div>
+    <div id="results-tab-content"></div>
+    <p class="text-center text-xs text-slate-500 mt-8">Rule-based scoring engine (keyword + heuristic matching) — swap in an LLM call for deeper semantic analysis.</p>
+  `;
+  window.__lastResult = result;
+  renderResultsTabs();
+}
+function renderResultsTabs() {
+  const tabs = [
+    ["overview", ICONS.gauge, "Overview"],
+    ["skills", ICONS.layers, "Skill Gaps"],
+    ["charts", ICONS.target, "Charts"],
+    ["suggestions", ICONS.sparkles, "AI Suggestions"],
+  ];
+  document.getElementById("results-tabs").innerHTML = tabs.map(([id,icon,label]) =>
+    `<button class="tab-btn ${resultsTab===id?"active":""}" onclick="setResultsTab('${id}')">${ic(icon,14)} ${label}</button>`
+  ).join("");
+  renderResultsTabContent();
+}
+function setResultsTab(id) { resultsTab = id; renderResultsTabs(); }
+function renderResultsTabContent() {
+  const result = window.__lastResult;
+  const content = document.getElementById("results-tab-content");
+  if (resultsTab === "overview") {
+    content.innerHTML = `
+      <div class="card">
+        <div class="text-xs uppercase tracking-wide text-slate-500 font-semibold mb-3">Job Match Breakdown</div>
+        ${bar100("Technical Skills Match", result.techMatchPct, COLORS.match)}
+        ${bar100("Experience Match", result.experiencePct, COLORS.accent)}
+        ${bar100("Education Match", result.educationPct, COLORS.accent)}
+        ${bar100("Certification Match", result.certMatchPct, COLORS.gap)}
+        ${bar100("Keyword Match", result.keywordMatchPct, COLORS.gap)}
+        ${bar100("Soft Skills Match", result.softMatchPct, COLORS.match)}
+        <div class="text-xs uppercase tracking-wide text-slate-500 font-semibold mb-3 mt-6">ATS Score Breakdown</div>
+        ${result.atsBarData.map(d => bar100(d.name, d.score, COLORS.accent)).join("")}
+        <p class="text-xs text-slate-500 mt-3">${result.wordCount} words · ${result.bulletCount} bullet lines · ${result.actionVerbHits} action-verb hits · ${result.numberHits} quantified results.</p>
+      </div>`;
+  } else if (resultsTab === "skills") {
+    const matched = [...result.matchedTech, ...result.matchedSoft];
+    content.innerHTML = `
+      <div class="card">
+        <div class="text-xs uppercase tracking-wide text-slate-500 font-semibold mb-3">Matched Skills (${matched.length})</div>
+        <div class="flex flex-wrap gap-2 mb-6">${matched.length ? matched.map(s=>badge(s,"match")).join("") : `<span class="text-sm text-slate-500">No overlapping skills found.</span>`}</div>
+        <div class="text-xs uppercase tracking-wide text-slate-500 font-semibold mb-3">Extra Skills (in resume, not JD)</div>
+        <div class="flex flex-wrap gap-2 mb-6">${result.extraSkills.length ? result.extraSkills.map(s=>badge(s,"accent")).join("") : `<span class="text-sm text-slate-500">None found.</span>`}</div>
+        <div class="text-xs uppercase tracking-wide text-slate-500 font-semibold mb-3">Missing Skills &amp; Priority</div>
+        <table class="tl-table">
+          <thead><tr><th>Skill</th><th>Category</th><th>Priority</th><th>Suggested Location</th></tr></thead>
+          <tbody>
+            ${result.missingSkillsTable.length ? result.missingSkillsTable.map(row => `<tr><td>${row.skill}</td><td>${row.category}</td><td>${badge(row.priority, row.priority==="Required"?"danger":"gap")}</td><td class="text-slate-500">${row.location}</td></tr>`).join("") : `<tr><td colspan="4" class="py-10 text-center text-slate-500">No missing skills detected — great alignment.</td></tr>`}
+          </tbody>
+        </table>
+      </div>`;
+  } else if (resultsTab === "charts") {
+    content.innerHTML = `
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card"><div class="font-medium mb-3 text-sm text-white">Skill Radar</div>${radarSVG(result.radarData)}</div>
+        <div class="card"><div class="font-medium mb-3 text-sm text-white">Keyword Composition</div>${pieSVG(result.keywordPieData)}</div>
+        <div class="card md:col-span-2">
+          <div class="font-medium mb-3 text-sm text-white">ATS Category Scores</div>
+          ${result.atsBarData.map(d => bar100(d.name, d.score, COLORS.accent)).join("")}
+        </div>
+      </div>`;
+  } else if (resultsTab === "suggestions") {
+    content.innerHTML = `<div class="card">${result.suggestions.map(s => `<div class="flex gap-3 items-start py-3 border-b border-border last:border-0 text-sm"><span style="color:#1FB6A6;margin-top:2px">${ic(ICONS.check,16)}</span><span>${s}</span></div>`).join("")}</div>`;
+  }
+}
+function doSaveReport() {
+  if (resultsSaved) return;
+  const result = window.__lastResult;
+  const btn = document.getElementById("save-report-btn");
+  const label = document.getElementById("save-report-label");
+  label.textContent = "Saving...";
+  setTimeout(() => {
+    const rank = rankLabel(result.resumeRankScore);
+    saveReport({
+      id: "r_" + Date.now(),
+      jobTitle: lastAnalysis.jobTitle,
+      companyName: lastAnalysis.companyName,
+      resumeFileName: lastAnalysis.resumeFileName,
+      jobMatchScore: result.jobMatchScore,
+      atsScore: result.overallATSScore,
+      resumeRank: rank.label,
+      createdAt: new Date().toISOString(),
+      reportJson: result,
+    });
+    resultsSaved = true;
+    label.textContent = "Saved to history";
+    btn.disabled = true;
+  }, 400);
+}
+
+/* ==================== PAGE: HISTORY ==================== */
+function renderHistory() {
+  const reports = getReports();
+  document.getElementById("app-main").innerHTML = `
+    <h1 class="text-2xl font-bold mb-1 text-white">Resume History</h1>
+    <p class="text-slate-400 text-sm mb-6">Every scan you've saved, most recent first.</p>
+    <div class="card">
+      ${reports.length === 0 ? `
+        <div class="text-center py-16 text-slate-500">${ic(ICONS.fileText,32)}<p class="text-sm mt-3">No saved reports yet.</p></div>` : `
+        <table class="tl-table">
+          <thead><tr><th>Job Title</th><th>Company</th><th>ATS Score</th><th>Job Match</th><th>Rank</th><th>Date</th></tr></thead>
+          <tbody>
+            ${reports.map(r => `<tr><td>${r.jobTitle || "Untitled scan"}</td><td class="text-slate-400">${r.companyName || "—"}</td><td>${r.atsScore}%</td><td>${r.jobMatchScore}%</td><td>${r.resumeRank}</td><td class="text-slate-500">${new Date(r.createdAt).toLocaleDateString()}</td></tr>`).join("")}
+          </tbody>
+        </table>`}
+    </div>`;
+}
+
+/* ==================== PAGE: SETTINGS ==================== */
+function renderSettings() {
+  const user = getUser();
+  document.getElementById("app-main").innerHTML = `
+    <div style="max-width:36rem">
+      <h1 class="text-2xl font-bold mb-1 text-white">Settings</h1>
+      <p class="text-slate-400 text-sm mb-6">Manage your account details.</p>
+      <div class="card space-y-4">
+        <div><label class="label">Name</label><input class="input-field" value="${(user && user.name) || ""}" disabled/></div>
+        <div><label class="label">Email</label><input class="input-field" value="${(user && user.email) || ""}" disabled/></div>
+        <div><label class="label">Plan</label><input class="input-field" value="Free" disabled/></div>
+        <p class="text-xs text-slate-500">This is a local, static build — profile editing and billing aren't wired up to a backend. Your data lives only in this browser's storage.</p>
+      </div>
+    </div>`;
+}
+
+/* ==================== LANDING CONTENT ==================== */
+const FEATURES = [
+  { icon: ICONS.target, title: "Job Match Scoring", desc: "Weighted comparison across skills, experience, education and certifications against any job description." },
+  { icon: ICONS.fileCheck, title: "ATS Compatibility Check", desc: "Catches formatting issues, weak bullet points, and passive voice before a bot ever sees your resume." },
+  { icon: ICONS.sparkles, title: "AI Suggestions", desc: "Concrete, prioritized fixes — which skills to add, where, and why they matter for this specific role." },
+  { icon: ICONS.bar, title: "Visual Reports", desc: "Radar charts, keyword breakdowns, and score history so progress is easy to see at a glance." },
+  { icon: ICONS.shield, title: "Private by Default", desc: "Your resumes and reports stay in your own browser — never uploaded or used for training." },
+  { icon: ICONS.scan, title: "Resume History", desc: "Track every version and job match over time, and compare which resume performs best." },
+];
+const PRICING = [
+  { name: "Free", price: "$0", tag: "Get a feel for it", features: ["3 scans / month","Core ATS score","Basic skill-gap report"], cta: "Start free" },
+  { name: "Pro", price: "$19", tag: "For active job seekers", features: ["Unlimited scans","Full skill-gap + keyword report","AI resume rewriting","Cover letter generator"], cta: "Start Pro trial", highlighted: true },
+  { name: "Team", price: "$49", tag: "For recruiters & coaches", features: ["Everything in Pro","Multi-candidate dashboard","Shared reports","Priority support"], cta: "Talk to sales" },
+];
+const FAQS = [
+  { q: "How is my score calculated?", a: "We compare your resume against the job description across technical skills, experience, education, certifications, keywords, and ATS formatting, then combine those into weighted scores." },
+  { q: "Do you store my resume?", a: "In this build, everything runs client-side — your resume text and saved reports live only in your browser's local storage." },
+  { q: "Which file types are supported?", a: "DOCX uploads or plain-text .txt files, or you can paste text directly for either the resume or the job description." },
+  { q: "Is there a free plan?", a: "Yes — the Free plan includes a limited number of scans per month with core ATS scoring, no card required." },
+];
+const TESTIMONIALS = [
+  { name: "Priya S.", role: "Data Analyst", quote: "Found three missing keywords that were blocking my applications. Interview rate went up within a week." },
+  { name: "Marcus T.", role: "Software Engineer", quote: "The skill-gap table told me exactly what to add and where — no more guessing." },
+  { name: "Elena R.", role: "Career Coach", quote: "I use this with every client before they submit an application." },
+];
+
+function renderLandingContent() {
+  document.getElementById("features-grid").innerHTML = FEATURES.map(f => `
+    <div class="card">
+      <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style="background:rgba(47,111,237,.15)">
+        <span style="color:#5B8DEF">${ic(f.icon,20)}</span>
+      </div>
+      <h3 class="font-semibold text-lg mb-2 text-white">${f.title}</h3>
+      <p class="text-sm text-slate-400 leading-relaxed">${f.desc}</p>
+    </div>`).join("");
+
+  document.getElementById("pricing-grid").innerHTML = PRICING.map(p => `
+    <div class="card flex flex-col ${p.highlighted ? "" : ""}" style="${p.highlighted ? "border-color:#2F6FED;box-shadow:0 0 0 2px rgba(47,111,237,.3)" : ""}">
+      ${p.highlighted ? `<span class="text-xs font-semibold rounded-full px-3 py-1 mb-4" style="color:#5B8DEF;background:rgba(47,111,237,.15);width:fit-content">Most popular</span>` : ""}
+      <div class="font-semibold text-lg text-white">${p.name}</div>
+      <div class="text-sm text-slate-400 mb-4">${p.tag}</div>
+      <div class="text-4xl font-display font-extrabold mb-6 text-white">${p.price}<span class="text-base font-normal text-slate-400">/mo</span></div>
+      <ul class="space-y-2.5 text-sm text-slate-300 mb-8 flex-1">
+        ${p.features.map(f => `<li class="flex items-center gap-2"><span style="color:#1FB6A6">${ic(ICONS.fileCheck,15)}</span>${f}</li>`).join("")}
+      </ul>
+      <button onclick="showAuth('register')" class="${p.highlighted ? "btn-primary" : "btn-secondary"}">${p.cta}</button>
+    </div>`).join("");
+
+  document.getElementById("testimonials-grid").innerHTML = TESTIMONIALS.map(t => `
+    <div class="card">
+      <div class="flex gap-1 mb-3" style="color:#F5A623">${Array.from({length:5}).map(()=>`<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>`).join("")}</div>
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">"${t.quote}"</p>
+      <div class="text-sm font-medium text-white">${t.name}</div>
+      <div class="text-xs text-slate-500">${t.role}</div>
+    </div>`).join("");
+
+  document.getElementById("faq-list").innerHTML = FAQS.map(f => `
+    <details class="py-5">
+      <summary class="flex items-center justify-between cursor-pointer font-medium text-white">
+        ${f.q}
+        <span class="chevron-icon text-slate-500">${ic(ICONS.chevron,18)}</span>
+      </summary>
+      <p class="text-sm text-slate-400 mt-3 leading-relaxed">${f.a}</p>
+    </details>`).join("");
+}
+
+/* ==================== INIT ==================== */
+renderLandingContent();
+applyAuthMode();
+if (getUser()) { enterApp("overview"); } else { goLanding(); }
+</script>
+</body>
+</html>
